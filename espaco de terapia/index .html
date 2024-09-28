@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Terapia</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Adriana Souza</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#sobre">Quem Somos</a></li>
+                    <li><a href="https://www.instagram.com/suainstagram" target="_blank">Instagram</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção com a foto de fundo -->
+    <section id="espaco-terapia">
+        <div class="conteudo">
+            <h1>Bem-vindo ao Espaço de Terapia</h1>
+            <p>Cuidar de si é o primeiro passo para transformar sua vida. Permita-se uma pausa, redescubra seu equilíbrio e encontre a paz interior com nossa terapia personalizada. Aqui, seu bem-estar é a nossa prioridade.</p>
+        </div>
+    </section>
+
+    <!-- Seção de Serviços -->
+    <section id="servicos">
+        <div class="conteudo-servico">
+            <h2>Serviços</h2>
+            <div class="servico">
+                <h3>Terapia Sistêmica</h3>
+                <p>A terapia sistêmica busca compreender as relações e dinâmicas familiares, oferecendo suporte para resolver conflitos e promover a harmonia.</p>
+            </div>
+            <div class="servico">
+                <h3>Desenvolvimento Humano</h3>
+                <p>O desenvolvimento humano foca no crescimento pessoal e profissional, ajudando a superar desafios e a alcançar objetivos de vida.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulário de agendamento -->
+    <div id="formulario-agendamento" class="formulario">
+        <span class="fechar">&times;</span>
+        <form id="agendamentoForm">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required>
+            <label for="data">Data:</label>
+            <input type="date" id="data" name="data" required>
+            <label for="horario">Horário:</label>
+            <select id="horario" name="horario" required></select>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <!-- Ícone de agendamento -->
+    <div id="btn-agendar" class="botao-agendar">
+        Agende Sua Visita
+    </div>
+
+    <!-- Incluindo o JavaScript -->
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,203 @@
+
+
+/* Reset básico e configuração de box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais do body */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #333;
+    padding: 10px 0;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #f4c542;
+}
+
+/* Div para o espaço de terapia */
+#espaco-terapia {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./img/terapia2.jpg'); /* Substitua pelo nome da sua foto */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Conteúdo que fica sobre a foto */
+.conteudo {
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo preto translúcido para facilitar a leitura */
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    max-width: 500px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Estilo da seção de serviços */
+#servicos {
+    background-image: url('./img/download.jpeg'); /* Substitua 'sua-imagem.jpg' pelo nome da sua imagem */
+    background-size: cover;
+    background-position: center;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#servicos .conteudo {
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo preto translúcido para o conteúdo */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#servicos h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.servico {
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo preto translúcido */
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    max-width: 300px; /* Tamanho da div de serviço */
+    margin: 0 auto; /* Centraliza a div de serviço */
+    text-align: left;
+}
+
+.servico h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.servico p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Estilo do botão de agendamento fixo */
+.botao-agendar {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.botao-agendar:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo do formulário de agendamento */
+.formulario {
+    display: none;
+    position: fixed;
+    bottom: 60px;
+    right: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    max-width: 300px;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario label {
+    margin-bottom: 5px;
+}
+
+.formulario input,
+.formulario button {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.formulario button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo do botão de fechar */
+.fechar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+}
+
+.fechar:hover {
+    color: #ff0000;
+}
